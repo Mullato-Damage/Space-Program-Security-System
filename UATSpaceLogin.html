@@ -1,0 +1,35 @@
+<!--Terione Martin-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--This will take me directly to the script that'll process the information.-->
+    <script src="LoginKeeperScript.js"></script>
+    <!--This will take me to the css that will customize my page and the font to give it some life.-->
+    <link href="LoginKeeperStyle.css" rel="stylesheet" type="text/css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Space Login</title>
+</head>
+<body>
+    <h1>
+        <!--This is my image and and the header that goes under it.-->
+        <img src= "PlanetLogo.png"> <br>
+        Before entering, please enter credentials to see confidental DATA...</h1>
+    <br>
+    <!--This will pull the id from the script and replace the statement based on what incorrection the user has.-->
+    <p id="LoginStatus" class="loginID"> Status of login...</p>
+    <br>
+    <!--This is the from that shows the imputs on the page. Three inouts will be shown for first name, last name, and badge code.
+    It also has a submit button, so the program processes the inputs all at once.-->
+    <form id="credSubmit" onsubmit="return false">
+        FIRST NAME:  <input type="text" id="FirstName" /> <br>
+        LAST NAME:   <input type="text" id="LastName" /> <br>
+        BADGE CODE:  <input type="number" id="CodePart" /> <br>
+        <input type="submit" onclick="checkCreds();" />
+    </form>
+    <br>
+    <!--A reminder fo rthe user to keep the name under 20 characters or the program won't work.-->
+    <h2>Please keep each input under 20 characters</h2>
+</body>
+</html>
